@@ -1,0 +1,14 @@
+public class typecasting {
+    public static void main(String[] args) {
+        byte byt=120;
+        short st=6752;
+        int num=76385;
+        float f1=6758.00f;
+        double d1=54683748.076;
+        System.out.println((byte)st);
+        System.out.println((short)num);
+        System.out.println((int)f1);
+        System.out.println((float)d1);
+        
+    }
+}

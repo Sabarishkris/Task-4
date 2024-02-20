@@ -1,0 +1,20 @@
+import java.util.*;
+public class randomnumber {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        Random rand=new Random();
+
+        while (true){
+            int random=rand.nextInt(1001);
+        System.out.println("Enter 1->Random number  || 2-> Exit");
+        int n=sc.nextInt();
+        if(n==1) {
+            System.out.println("Random number range 0 - 1000 : " + random);
+        }
+        if(n==2) {
+            System.out.println("Thank you ");
+            System.exit(0);
+        }}
+
+    }
+}

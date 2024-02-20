@@ -1,0 +1,31 @@
+import java.util.*;
+enum weekdays{
+    Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday;
+}
+
+public class enumclass {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        while(true) {
+        System.out.println("Enter 1-> week days  ||  2->Exit ");
+        int a=sc.nextInt();
+
+            switch (a) {
+                case 1:
+                    System.out.println("Enter the number 1 - 7 weekdays : ");
+                    int n = sc.nextInt();
+                    if (0 <= n && n <= 7)
+                        System.out.println(weekdays.values()[n - 1]);
+                    else
+                        System.out.println("Enter the valid number weekdays number 1 - 7");
+                    break;
+                case 2:
+                    System.out.println("Thank you !! ");
+                    System.exit(0);
+                default:
+                    System.out.println("Select the valid selection ");
+            }
+        }
+
+    }
+}

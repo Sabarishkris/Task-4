@@ -1,0 +1,15 @@
+import java.util.*;
+public class swap {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number 1 : ");
+        int a=sc.nextInt();
+        System.out.println("Enter the number  2 : ");
+        int b=sc.nextInt();
+        a=a+b;
+        b=Math.abs(a-b);
+        a= Math.abs(b-a);
+
+        System.out.println( "Number 1 : "+ a + " Number 2 : "+b);
+    }
+}
